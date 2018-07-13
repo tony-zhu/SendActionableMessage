@@ -3,29 +3,30 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <script type="application/adaptivecard+json">
 {
-   "$schema":"http://adaptivecards.io/schemas/adaptive-card.json",
-   "type":"AdaptiveCard",
-   "version":"1.0",
-   "originator":"",
-   "body": [
-       {
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "originator": "",
+    "body": [
+        {
             "size": "large",
             "text": "Hello Actionable message",
             "wrap": true,
             "type": "TextBlock"
         }
-   ],
-   "actions":[
-      {
-         "type":"Action.OpenUrl",
-         "title":"Install debugger",
-         "url":"https://store.office.com/app.aspx?assetid=WA104381686"
-      }
-   ]
+    ],
+    "actions": [
+        {
+            "type": "Action.InvokeAddInCommand",
+            "title": "Open Actionable Messages Debugger",
+            "addInId": "3d1408f6-afb3-4baf-aacd-55cd867bb0fa",
+            "desktopCommandId": "amDebuggerOpenPaneButton"
+        }
+    ]
 }
 </script>
 </head>
-<body>
 If the card doesn&#39;t appear, <a target="_blank" href="https://store.office.com/app.aspx?assetid=WA104381686&productgroup=Outlook"/>install Actionable Messages Debugger Outlook add-in</a> to debug the issue.
+<body>
 </body>
 </html>
