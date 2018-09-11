@@ -19,7 +19,7 @@ def main(argv):
     payload_file = ""
 
     try:
-        opts, _args = getopt.getopt(argv, 'u:p:r:', ['user=', 'password=', 'recipient'])
+        opts, _args = getopt.getopt(argv, 'u:p:r:f:', ['user=', 'password=', 'recipient=', 'file='])
     except getopt.GetoptError:
         print('send.py -u <username> -p <password> [-r <recipient>]  [-f <paylod file name>]')
         sys.exit(2)
